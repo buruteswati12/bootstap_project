@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f0;
+  }
+
+  .navbar-brand img {
+    height: 50px;
+  }
+
+  .about-section {
+    padding: 60px 40px;
+    background-color: #eef5e8;
+  }
+
+  .about-section h2 {
+    font-weight: bold;
+    color: #0b3d2e;
+  }
+
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+  }
+
+  .plant-img img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .top-banner {
+    height: 80px;
+  }
+
+  /* Responsive Tweaks */
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 40px 20px;
+    }
+
+    .about-text {
+      font-size: 1rem;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+  }
+
+  /* Responsive Tweaks */
+  @media (max-width: 992px) {
+    .about-section .row {
+      flex-direction: column;
+    }
+
+    .plant-img img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 30px 15px;
+    }
+
+    .about-text {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    nav ul li a {
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .navbar-brand img {
+      height: 40px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .navbar-brand img {
+      height: 35px;
+    }
+
+    .about-section {
+      padding: 20px;
+    }
+
+    .about-text {
+      font-size: 0.95rem;
+    }
+  }
+</style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm py-3 px-4 sticky-top nav-underline">
+    <a class="navbar-brand" href="#">
+      <img src="https://harshdeepindia.com/wp-content/uploads/2023/11/harsh-logo.png" alt="Harshdeep Logo" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item mx-2"><a class="nav-link" href="Why_Harshdeep.html">WHY HARSHDEEP</a></li>
+        <li class="nav-item mx-2"><a class="nav-link" href="Our_Collection.html">OUR COLLECTION</a></li>
+        <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"  id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                       BUSINESS WITH  HARSHDEEP
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="https://harshdeepindia.com/wp-content/uploads/2025/07/harshdeep-brochure.pdf">LATEST COLLECTIONS</a></li>
+                        <li><a class="dropdown-item" href="https://harshdeepindia.com/wp-content/uploads/2025/07/Lookbook.pdf">LOOK BOOK</a></li>
+                        <li><a class="dropdown-item" href="https://harshdeepindia.com/pot-planter-blogs/">BLOGS</a></li>
+                         <li><a class="dropdown-item" href="https://harshdeepindia.com/flower-pots-near-me/">LOCATE US</a></li>
+                    </ul>
+                </li>
+        <li class="nav-item mx-2"><a class="nav-link" href="investor.html">INVESTORS</a></li>
+        <li class="nav-item mx-2">
+          <a class="btn btn-warning px-3" href="https://muebles.co.in/">CHECK OUT MUEBLES</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ABOUT SECTION -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+
+      <!-- LEFT IMAGE (controlled size) -->
+      <div class="col-md-6">
+        <img src="https://harshdeepindia.com/wp-content/uploads/2022/09/DIAMOND-LOW-PLANTER.jpg"
+          class="img-fluid rounded" style="max-height: 420px; width: 100%; object-fit: cover;" alt="About Harshdeep">
+      </div>
+
+      <!-- RIGHT CONTENT -->
+      <div class="col-md-6 ps-md-5">
+        <h2 class="fw-bold text-success mb-4">ABOUT HARSHDEEP</h2>
+        <p>
+          We manufacture indoor and outdoor pots to meet every plant requirement.The hanging pots fill small spaces with
+          a lively vibe.
+        </p>
+        <p>
+          Our team comprises creative, talented individuals who share a love for design and a passion for making things.
+          The world around us constantly inspires us, and we strive to create products that reflect our unique
+          perspective.
+        </p>
+        <p>
+          Our company started with a simple mission: to design and manufacture the best quality pots made from 100%
+          recyclable materials. We are proud to say that we have stayed true to our mission, and our pots are now
+          enjoyed by customers worldwide.
+        </p>
+        <p>
+          Through our planters, we can make a positive difference in the world by helping to reduce environmental waste.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- DESIGNS SECTION -->
+  <div class="container text-center py-5" style="background-color:#f9f9ef;">
+    <h2 style="color:#8cc63f; font-weight:bold;">DESIGNS AT HARSHDEEP</h2>
+    <p class="mt-4 about-text">
+      At Harshdeep, nature is one of the most important sources of inspiration. So our designers are constantly inspired
+      by the world
+      around them when they create these beautiful pots for plant lovers.
+    </p>
+    <p class="about-text mt-3">
+      We are a team of passionate designers who work hard to create pots that bring joy to plant lovers. We love what we
+      do, and we
+      hope our planters carry a little happiness into your life.
+    </p>
+  </div>
+
+
+  <!-- OUR GROWTH FUNDAMENTALS SECTION -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+
+      <!-- LEFT SECTION (Two images side by side) -->
+      <div class="col-md-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <img src="https://harshdeepindia.com/wp-content/uploads/2022/10/1100x1916-banner-1a.jpg"
+              class="img-fluid rounded" alt="">
+          </div>
+          <div class="col-6">
+            <img src="https://harshdeepindia.com/wp-content/uploads/2022/09/1100x1916-banner-2.jpg"
+              class="img-fluid rounded" alt="">
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SECTION (Heading + Paragraph) -->
+      <div class="col-md-6">
+        <h2 class="fw-bold text-success mb-4">OUR GROWTH FUNDAMENTALS</h2>
+        <p>
+          We are a company that takes pride in our work. We have the best state-of-the-art manufacturing facility...
+        </p>
+        <p>
+          We are a team of passionate individuals who have been manufacturing the best pots for years...
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <!-- QUALITY BEGINS WITH US SECTION -->
+  <div class="container-fluid py-5" style="background-color:#faf7ef;">
+    <div class="row align-items-center px-4 px-md-5">
+
+      <div class="col-md-6 mb-4 mb-md-0">
+        <h2 style="color:#0b3d2e; font-weight:bold;">QUALITY BEGINS WITH US</h2>
+        <p class="about-text mt-3">
+          We are a company committed to providing the highest quality pots that are quality checked. We have been in
+          business for over
+          21 years and have established a reputation for providing quality products. We believe our products are the
+          best on the
+          market and stand behind them 100%.
+        </p>
+        <p class="about-text mt-3">
+          We are passionate about our products and customers, and we work hard to ensure they are satisfied with their
+          purchases.
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <img src="https://harshdeepindia.com/wp-content/uploads/2022/09/MILANO-SHORT-PLANTERS-2.jpg"
+          class="img-fluid rounded" alt="Quality Image" />
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>
+<!-- footer start -->
+<footer class="footer-bg text-white pt-5 pb-4">
+  <div class="container">
+
+    <div class="row gy-4">
+
+      <!-- LEFT SIDE (LOGO + TEXT) -->
+      <div class="col-12 col-md-6 col-lg-4">
+
+        <!-- Logo -->
+        <img src="https://harshdeepindia.com/wp-content/uploads/2023/11/harsh-logo.png" alt="Harshdeep Logo"
+          class="img-fluid mb-3" style="max-width: 200px;">
+
+        <p class="mb-1 text-uppercase">
+          To know more about our planters or to buy your favorite pots around your homes contact us at
+        </p>
+
+        <p class="fw-bold">Harshdeep Hortico LTD</p>
+
+        <p class="mb-1">
+          <span class="city">BHIWANDI</span> |
+          <span class="city">MUMBAI</span> |
+          <span class="city">PUNE</span> |
+          <span class="city">RAJAMUNDRY</span> |
+          <span class="city">DELHI</span>
+        </p>
+
+        <p class="mb-3 small">
+          9920 652279 | 9892237027 | 7506334496 | 9391007557 | 7506334492
+        </p>
+
+        <p class="mb-1">
+          <span class="city">KOLKATA</span> |
+          <span class="city">AHMEDABAD</span>
+        </p>
+
+        <p class="small">
+          6289684538 | 98334 03802
+        </p>
+
+        <p class="small text-warning mt-2">
+          CIN: L26994MH2022PLC396421
+        </p>
+
+      </div>
+
+      <!-- COLUMN 2 -->
+      <div class="col-6 col-md-3 col-lg-2">
+        <h5 class="footer-title">WHY HARSHDEEP</h5>
+        <ul class="list-unstyled footer-links">
+          <li>HARSHDEEP HORTICO LTD</li>
+          <li>We manufacture indoor and outdoor pots to meet every plant requirement.</li>
+          <li>The hanging pots fill small spaces with a lively vibe.</li>
+          <li>FOR ANY INQUIRY: <br><a href="mailto:info@harshdeepindia.com" class="email">info@harshdeepindia.com</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 3 -->
+      <div class="col-6 col-md-3 col-lg-3">
+        <h5 class="footer-title">OUR COLLECTION</h5>
+        <ul class="list-unstyled footer-links">
+          <li>ILLUMINATED PLANTERS</li>
+          <li>ROTOMOLDED SERIES</li>
+          <li>INDOOR SERIES</li>
+          <li>DECORATIVE SERIES</li>
+          <li>GROWER SERIES</li>
+          <li>FRP SERIES</li>
+          <li>SUSTAINABLE PLANTERS</li>
+        </ul>
+      </div>
+
+      <!-- COLUMN 4 -->
+      <div class="col-6 col-md-3 col-lg-3">
+        <h5 class="footer-title">BUSINESS WITH HARSHDEEP</h5>
+        <ul class="list-unstyled footer-links">
+          <li>CONTACT US</li>
+          <li>WHERE TO BUY</li>
+          <li>EVENTS</li>
+          <li>PRIVACY POLICY</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>

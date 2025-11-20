@@ -1,0 +1,180 @@
+.carousel-caption {
+  bottom: 120px;  /* move up or down */
+  top: auto;
+  transform: translateY(30px);
+  text-align: center;
+  opacity: 0;
+  transition: all 0.8s ease-in-out;
+}
+
+.carousel-item.active .carousel-caption {
+  opacity: 1;
+  transform: translateY(0);
+}
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.img-box img {
+  width: 100%;
+  transition: transform 0.5s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.05); /* zoom effect */
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.img-overlay h5 {
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.img-box:hover .img-overlay {
+  opacity: 1;
+}
+.insta-video-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.insta-video-wrapper {
+  width: 100%;
+  padding-top: 125%; /* Instagram Reel ratio */
+  position: relative;
+}
+
+.insta-video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* Instagram Button */
+.btn-instagram {
+  background: #E1306C;
+  color: #fff;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-instagram:hover {
+  background: #c42a61;
+  color: white;
+}
+.footer-bg {
+  background-color: #d9f5d2; /* Light green background */
+  color: #123016; /* Dark green text */
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #0d4d1f;
+}
+
+.footer-links li {
+  margin-bottom: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: #123016;
+}
+
+.footer-links li:hover {
+  color: #0c6b28;
+}
+
+.city {
+  color: #0c6b28; /* Deep green highlight */
+  font-weight: 700;
+}
+
+.email {
+  color: #0c6b28;
+}
+
+.email:hover {
+  color: #074b1b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-title {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+
+  .footer-title {
+    text-align: center;
+  }
+}
+footer,
+footer p,
+footer span,
+footer li,
+footer div {
+  color: #000 !important;   /* pure black */
+}
+.custom-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.custom-card:hover {
+  background: #d8f5d2;     /* light green */
+  transform: translateY(-8px);
+  border-color: #a5da94;
+}
+
+.card-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.view-btn {
+  background: transparent;
+  border: 2px solid #0c6b28;
+  color: #0c6b28;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.custom-card:hover .view-btn {
+  background: #0c6b28;
+  color: white;
+}
+
